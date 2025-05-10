@@ -1,4 +1,4 @@
-const allowedUrls = ["apimf.icicipruamc.com", "https://analytics.google.com"]
+const allowedUrls = [] // Add API base path here to log
 let accordionCounter = 0;
 document.getElementById('clearLogs').addEventListener('click', function () {
     const accordion = document.querySelector(".accordion");
