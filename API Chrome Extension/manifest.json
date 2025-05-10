@@ -1,0 +1,8 @@
+{
+    "name": "API Monitor DevTools Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "A Chrome DevTools extension with a panel displaying API data in an accordion. Update 'allowedUrls' in panel.js for selective logging. Author: Anil Singh (singh.anilsd@gmail.com)",
+    "devtools_page": "devtools.html",
+    "permissions": []
+  }

@@ -1,0 +1,189 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  background-color: #f8fafc;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+#clearLogs {
+  height: 30px;
+  width: 120px;
+  margin: 16px 16px;
+  background: lightskyblue;
+  font-size: 17px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #e8ecef;
+    color: #1a202c;
+    line-height: 1.6;
+}
+
+/* Accordion Container */
+.accordion {
+    
+    padding: 16px;
+}
+
+/* Accordion Item */
+.accordion-item {
+    background-color: #f7fafc;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* Accordion Header */
+.accordion-header {
+    background-color: #4a5568;
+    color: #e2e8f0;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    position: relative;
+}
+
+.accordion-header:hover {
+    background-color: #5a6b82;
+}
+
+.accordion-header::after {
+    content: '\25BC'; /* Down arrow */
+    font-size: 10px;
+    color: #a0aec0;
+    transition: transform 0.2s ease;
+}
+
+.accordion-item.active .accordion-header::after {
+    transform: rotate(180deg); /* Up arrow when active */
+}
+
+/* Accordion Content */
+.accordion-content {
+    display: none;
+    padding: 16px;
+    background-color: #edf2f7;
+    border-top: 1px solid #cbd5e0;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+/* Content Sections */
+.requestUrl,
+.requestBody,
+.responseBody {
+    margin-bottom: 16px;
+}
+
+.requestUrl strong,
+.requestBody strong,
+.responseBody strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 6px;
+}
+
+/* URL Styling */
+.requestUrl {
+    word-break: break-all;
+    color: #2b6cb0;
+}
+
+/* Preformatted Code Blocks */
+pre {
+    background-color: #2d3748;
+    color: #e2e8f0;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #4a5568;
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+/* Basic Syntax Highlighting for JSON and JavaScript */
+pre code .string {
+    color: #f687b3;
+}
+
+pre code .number {
+    color: #63b3ed;
+}
+
+pre code .boolean {
+    color: #f6ad55;
+}
+
+pre code .null {
+    color: #f6ad55;
+}
+
+pre code .key {
+    color: #b794f4;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .accordion {
+        padding: 0 8px;
+    }
+
+    .accordion-header {
+        font-size: 14px;
+        padding: 12px 14px;
+    }
+
+    .accordion-content {
+        padding: 12px;
+    }
+
+    pre {
+        font-size: 11px;
+        padding: 10px;
+    }
+}
+
+/* Smooth Transitions for Content */
+.accordion-content {
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content.active {
+    padding: 16px;
+}
+
+.accordion-content.active {
+  display: block;
+}
