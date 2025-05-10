@@ -25,14 +25,8 @@ function handleAccordionClick() {
 }
 
 function shouldLog(url) { 
-    let flag = !allowedUrls?.length
-    allowedUrls.forEach(cUrl => {
-        if (url.search(cUrl) > -1) {
-            flag = true
-        }
-    })
-    return flag
-
+    if (!allowedUrls?.length) return true;
+    return allowedUrls.some(cUrl => url.includes(cUrl));
 }
 
 function addAccordion(request) {  
